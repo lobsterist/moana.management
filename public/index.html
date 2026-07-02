@@ -4,244 +4,216 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Moana Management — Profitable Growth for IT Services and SaaS Companies</title>
-<meta name="description" content="Moana Management OÜ is a boutique management consultancy helping professional services and SaaS companies in the IT industry reach profitable growth. Senior-level strategic counsel, delivered directly.">
+<meta name="description" content="Moana Management OÜ is a boutique management consultancy helping professional services companies in the IT industry, and SaaS companies, reach profitable growth. Senior strategic counsel, delivered personally.">
 <meta property="og:title" content="Moana Management">
-<meta property="og:description" content="Boutique strategic consulting — profitable growth for professional services and SaaS companies in the IT industry.">
+<meta property="og:description" content="Boutique strategic consulting — profitable growth for professional services companies in IT, and SaaS.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://moana.management/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b2239'/%3E%3Cpath d='M4 21c3-5 6-5 8 0s5 5 8 0 5-5 8 0' stroke='%23d8b26e' stroke-width='2.2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23191C1A'/%3E%3Cpath d='M4 21c3-5 6-5 8 0s5 5 8 0 5-5 8 0' stroke='%23A63A2B' stroke-width='2.2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --ink: #0b2239;
-    --ink-soft: #33475c;
-    --paper: #f7f5f0;
-    --paper-deep: #efece4;
-    --gold: #b98a3e;
-    --gold-soft: #d8b26e;
-    --line: #ddd6c8;
+    --paper: #F3F0E7;
+    --ink: #191C1A;
+    --graphite: #70746B;
+    --hairline: #DAD5C6;
+    --red: #A63A2B;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
   body {
-    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
     background: var(--paper);
     color: var(--ink);
-    line-height: 1.65;
+    font-family: "Newsreader", Georgia, serif;
+    font-optical-sizing: auto;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    animation: settle 300ms ease-out;
   }
-  .sans {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  }
-  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+  @keyframes settle { from { opacity: 0; } to { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { body { animation: none; } }
 
-  /* Header */
-  header {
-    position: sticky; top: 0; z-index: 10;
-    background: rgba(247, 245, 240, 0.92);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--line);
+  .mono {
+    font-family: "IBM Plex Mono", monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 11px;
+    font-weight: 500;
   }
-  .nav {
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 18px 0;
+  .doc {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 72px 28px 0;
   }
-  .brand {
-    display: flex; align-items: center; gap: 12px;
-    text-decoration: none; color: var(--ink);
+  .doc-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    color: var(--graphite);
+    margin-bottom: 72px;
   }
-  .brand svg { display: block; }
-  .brand-name {
-    font-size: 15px; letter-spacing: 0.22em; text-transform: uppercase;
-    font-weight: 600;
+  h1.firm {
+    font-size: clamp(3rem, 9vw, 5rem);
+    font-weight: 500;
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    margin-bottom: 56px;
   }
-  .nav-links { display: flex; gap: 28px; }
-  .nav-links a {
-    color: var(--ink-soft); text-decoration: none; font-size: 13px;
-    letter-spacing: 0.14em; text-transform: uppercase;
+  .headline {
+    font-size: clamp(1.3rem, 3vw, 1.55rem);
+    font-weight: 400;
+    line-height: 1.4;
+    max-width: 32ch;
+    margin-bottom: 44px;
   }
-  .nav-links a:hover { color: var(--gold); }
-  @media (max-width: 640px) { .nav-links { display: none; } }
+  .headline .redline {
+    text-decoration: underline;
+    text-decoration-color: var(--red);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+  }
+  p.body {
+    font-size: 1.1rem;
+    max-width: 58ch;
+    margin-bottom: 26px;
+  }
+  hr {
+    border: 0;
+    border-top: 1px solid var(--hairline);
+    margin: 56px 0;
+  }
+  .svc { margin-bottom: 38px; }
+  .svc-label {
+    color: var(--graphite);
+    margin-bottom: 9px;
+  }
+  .svc p {
+    font-size: 1.06rem;
+    max-width: 58ch;
+  }
+  .contact-line {
+    font-size: 1.1rem;
+    margin: 12px 0 84px;
+  }
+  .contact-line a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-color: var(--hairline);
+    text-underline-offset: 4px;
+    transition: text-decoration-color 0.2s;
+  }
+  .contact-line a:hover { text-decoration-color: var(--red); }
 
-  /* Hero */
-  .hero { padding: 110px 0 90px; }
-  .kicker {
-    font-size: 12px; letter-spacing: 0.28em; text-transform: uppercase;
-    color: var(--gold); font-weight: 600; margin-bottom: 26px;
+  .doc-footer {
+    border-top: 1px solid var(--hairline);
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 28px 64px;
+    position: relative;
+    overflow: hidden;
   }
-  h1 {
-    font-size: clamp(2.2rem, 5.4vw, 3.9rem);
-    line-height: 1.12; font-weight: 500; max-width: 17ch;
-    letter-spacing: -0.01em;
+  .wavemark { display: block; margin-bottom: 16px; }
+  .sig-name {
+    font-size: 2rem;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.2;
   }
-  .hero p {
-    margin-top: 30px; max-width: 54ch; font-size: 1.16rem; color: var(--ink-soft);
+  .sig-title {
+    color: var(--graphite);
+    font-size: 1.05rem;
+    margin-bottom: 30px;
   }
-  .hero-cta { margin-top: 42px; }
-  .btn {
-    display: inline-block; text-decoration: none;
-    background: var(--ink); color: var(--paper);
-    padding: 14px 34px; font-size: 13px; letter-spacing: 0.16em;
-    text-transform: uppercase; border: 1px solid var(--ink);
-    transition: background 0.2s, color 0.2s;
+  .legal {
+    color: var(--graphite);
+    line-height: 2.1;
+    position: relative;
+    z-index: 1;
   }
-  .btn:hover { background: transparent; color: var(--ink); }
-
-  .wave-divider { color: var(--gold-soft); opacity: 0.7; }
-
-  /* Sections */
-  section { padding: 88px 0; }
-  .section-alt { background: var(--paper-deep); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-  h2 {
-    font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 500;
-    margin-bottom: 18px; letter-spacing: -0.01em;
+  .legal a { color: var(--graphite); text-decoration: none; }
+  .legal a:hover { color: var(--ink); }
+  .chart-etch {
+    position: absolute;
+    right: -50px;
+    bottom: -60px;
+    width: 340px;
+    pointer-events: none;
+    opacity: 0.35;
   }
-  .lede { max-width: 62ch; color: var(--ink-soft); font-size: 1.08rem; }
-
-  .pillars {
-    margin-top: 54px; display: grid; gap: 40px;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  @media (max-width: 760px) { .pillars { grid-template-columns: 1fr; } }
-  .pillar { border-top: 2px solid var(--gold); padding-top: 22px; }
-  .pillar h3 { font-size: 1.15rem; font-weight: 600; margin-bottom: 10px; }
-  .pillar p { color: var(--ink-soft); font-size: 0.98rem; }
-
-  /* Approach */
-  .approach-grid {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;
-  }
-  @media (max-width: 760px) { .approach-grid { grid-template-columns: 1fr; } }
-  .approach-list { list-style: none; margin-top: 8px; }
-  .approach-list li {
-    padding: 18px 0; border-bottom: 1px solid var(--line);
-    color: var(--ink-soft);
-  }
-  .approach-list li strong { color: var(--ink); font-weight: 600; }
-  .approach-list li:last-child { border-bottom: none; }
-
-  /* Contact */
-  .contact { text-align: center; }
-  .contact .lede { margin: 0 auto; }
-  .contact .btn { margin-top: 36px; }
-
-  /* Footer */
-  footer {
-    background: var(--ink); color: #b9c4d0;
-    padding: 56px 0 40px; font-size: 0.85rem;
-  }
-  .footer-grid {
-    display: flex; justify-content: space-between; gap: 40px; flex-wrap: wrap;
-  }
-  footer .brand-name { color: var(--paper); margin-bottom: 14px; }
-  footer p { line-height: 1.8; }
-  footer a { color: var(--gold-soft); text-decoration: none; }
-  footer a:hover { text-decoration: underline; }
-  .footnote {
-    margin-top: 40px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,0.12);
-    color: #7e8ea0; font-size: 0.78rem;
+  @media (max-width: 560px) {
+    .doc { padding-top: 52px; }
+    .doc-meta { flex-direction: column; gap: 6px; margin-bottom: 52px; }
+    .chart-etch { width: 240px; right: -60px; }
   }
 </style>
 </head>
 <body>
 
-<header>
-  <div class="wrap nav">
-    <a class="brand" href="#top" aria-label="Moana Management home">
-      <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
-        <rect width="32" height="32" rx="6" fill="#0b2239"/>
-        <path d="M4 21c3-5 6-5 8 0s5 5 8 0 5-5 8 0" stroke="#d8b26e" stroke-width="2.2" fill="none" stroke-linecap="round"/>
-      </svg>
-      <span class="brand-name sans">Moana Management</span>
-    </a>
-    <nav class="nav-links sans">
-      <a href="#services">Services</a>
-      <a href="#approach">Approach</a>
-      <a href="#contact">Contact</a>
-    </nav>
+<main class="doc">
+  <div class="doc-meta mono" aria-hidden="true">
+    <span>Ref MM-2026-07 · Tallinn</span>
+    <span>Est. 2023</span>
   </div>
-</header>
 
-<main id="top">
+  <h1 class="firm">Moana<br>Management</h1>
 
-  <section class="hero">
-    <div class="wrap">
-      <div class="kicker sans">Boutique Strategic Consulting</div>
-      <h1>Profitable growth for professional services companies in IT, and SaaS.</h1>
-      <p>Moana Management is a boutique management consultancy serving professional services and SaaS companies in the IT segment — consultancies, agencies, software services firms, and software product businesses. We help their founders, executives, and boards turn growth into profitable growth: sound strategy, a healthy commercial model, and an organisation built to sustain both.</p>
-    </div>
+  <p class="headline"><span class="redline">Profitable growth</span> for professional services companies in IT, and SaaS.</p>
+
+  <p class="body">Moana Management is a boutique strategic consultancy. I advise the founders, executive teams, and boards of consultancies, agencies, software services firms, and SaaS businesses — on strategy, on the commercial model, and on the decisions that are difficult to discuss anywhere else.</p>
+
+  <p class="body">The firm is deliberately small. Every engagement is led and delivered personally, grounded in decades of executive experience building, leading, and growing these businesses. Few clients at a time. Candour over comfort.</p>
+
+  <hr>
+
+  <section class="svc">
+    <h2 class="svc-label mono">I. Growth strategy</h2>
+    <p>Positioning, portfolio, target customers, and internationalisation — so the pipeline fills with the right work at the right price.</p>
   </section>
 
-  <section id="services" class="section-alt">
-    <div class="wrap">
-      <h2>What we do</h2>
-      <p class="lede">We work with a small number of IT services and SaaS companies on the questions that decide whether growth creates value: where to play, how to win, and how to make the business model earn its keep.</p>
-      <div class="pillars">
-        <div class="pillar">
-          <h3>Growth Strategy</h3>
-          <p>Sharpening direction for services firms and SaaS businesses — positioning, portfolio, target customers, and internationalisation — so the pipeline fills with the right work at the right price.</p>
-        </div>
-        <div class="pillar">
-          <h3>Profitability &amp; Operating Model</h3>
-          <p>Turning revenue into results: pricing and commercial models, utilisation and delivery economics in services, recurring-revenue economics in SaaS, and the operating discipline to scale without margins eroding.</p>
-        </div>
-        <div class="pillar">
-          <h3>Executive &amp; Board Advisory</h3>
-          <p>A trusted sparring partner for CEOs, leadership teams, and boards of services and software companies. Independent perspective on the decisions that are difficult to discuss anywhere else.</p>
-        </div>
-      </div>
-    </div>
+  <section class="svc">
+    <h2 class="svc-label mono">II. Profitability &amp; operating model</h2>
+    <p>Turning revenue into results: pricing and commercial models, utilisation and delivery economics in services, recurring-revenue economics in SaaS, and the operating discipline to scale without margins eroding.</p>
   </section>
 
-  <section id="approach">
-    <div class="wrap approach-grid">
-      <div>
-        <h2>A deliberately small firm</h2>
-        <p class="lede">Moana Management is not a scaled consultancy — by design. Every engagement is led and delivered personally by the firm's founder, a senior advisor with decades of executive experience building, leading, and growing professional services and software companies in the IT industry.</p>
-      </div>
-      <ul class="approach-list">
-        <li><strong>Senior counsel only.</strong> You work directly with the principal — no leverage model, no junior teams, no hand-offs.</li>
-        <li><strong>Few engagements at a time.</strong> We take on a limited number of clients so each one gets genuine attention.</li>
-        <li><strong>Operator's perspective.</strong> Advice grounded in real experience running services and software businesses, not just analysing them.</li>
-        <li><strong>Candour over comfort.</strong> Clients hire us for the truth, plainly stated, and recommendations we would act on ourselves.</li>
-      </ul>
-    </div>
+  <section class="svc">
+    <h2 class="svc-label mono">III. Executive &amp; board advisory</h2>
+    <p>An independent sparring partner for the decisions that matter most — a senior perspective with no agenda beyond the truth, plainly stated.</p>
   </section>
 
-  <section id="contact" class="section-alt contact">
-    <div class="wrap">
-      <h2>Let's talk</h2>
-      <p class="lede">Engagements begin with a conversation. If your business is growing but profit isn't keeping pace — or you want an experienced, independent perspective on what comes next — get in touch.</p>
-      <a class="btn sans" href="mailto:vesa@moana.management">vesa@moana.management</a>
-    </div>
-  </section>
+  <hr>
 
+  <h2 class="svc-label mono">Correspondence</h2>
+  <p class="contact-line">Engagements begin with a conversation — <a href="mailto:vesa@moana.management">vesa@moana.management</a></p>
 </main>
 
-<footer>
-  <div class="wrap">
-    <div class="footer-grid sans">
-      <div>
-        <div class="brand-name">Moana Management</div>
-        <p>Profitable growth for professional services and SaaS companies in the IT industry.</p>
-      </div>
-      <div>
-        <p>
-          Moana Management OÜ<br>
-          Maakri tn 23a, 10145 Tallinn, Estonia<br>
-          <a href="mailto:vesa@moana.management">vesa@moana.management</a>
-        </p>
-      </div>
-      <div>
-        <p>
-          Registry code: 16681278<br>
-          VAT: EE102591132
-        </p>
-      </div>
-    </div>
-    <div class="footnote sans">
-      © 2026 Moana Management OÜ. All rights reserved.
-    </div>
-  </div>
+<footer class="doc-footer">
+  <svg class="wavemark" width="46" height="20" viewBox="0 0 46 20" aria-hidden="true">
+    <path d="M2 12c4-7 8-7 11 0s7 7 11 0 7-7 11 0 5 5 7 3" stroke="#A63A2B" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  </svg>
+  <div class="sig-name">Vesa Palmu</div>
+  <div class="sig-title">Founder &amp; Principal</div>
+  <p class="legal mono">
+    Moana Management OÜ · Maakri tn 23a, 10145 Tallinn, Estonia<br>
+    Reg. 16681278 · VAT EE102591132 · 59.4370°N 24.7536°E<br>
+    © 2026 Moana Management OÜ
+  </p>
+  <svg class="chart-etch" viewBox="0 0 340 240" aria-hidden="true">
+    <g fill="none" stroke="#70746B" stroke-width="0.7" opacity="0.5">
+      <path d="M10 215 C60 165 120 205 175 152 S290 130 340 65"/>
+      <path d="M30 240 C85 185 145 220 195 172 S300 152 350 92"/>
+      <path d="M-10 188 C50 142 115 182 165 130 S280 108 330 44"/>
+      <path d="M-20 162 C40 120 105 160 155 108 S270 86 320 22"/>
+      <circle cx="210" cy="130" r="1.6" fill="#70746B"/>
+      <circle cx="152" cy="162" r="1.6" fill="#70746B"/>
+      <circle cx="268" cy="92" r="1.6" fill="#70746B"/>
+    </g>
+    <g font-family="IBM Plex Mono, monospace" font-size="7" fill="#70746B" opacity="0.7">
+      <text x="216" y="127">54</text>
+      <text x="158" y="159">37</text>
+      <text x="274" y="89">71</text>
+    </g>
+  </svg>
 </footer>
 
 </body>

@@ -1,9 +1,7 @@
 # Design System — Moana Management
 
-> Status: proposed by /design-consultation on 2026-07-02 with auto-decided defaults
-> (user was away for the confirmation prompts). Preview:
+> Status: approved and applied to `public/index.html` on 2026-07-02. Preview:
 > `~/.gstack/projects/lobsterist-moana.management/designs/design-system-20260702/preview.html`.
-> Not yet applied to `public/index.html` — the live site still uses the original navy/gold system.
 
 ## Product Context
 - **What this is:** One-page brochure site for Moana Management OÜ, a boutique one-person strategic consultancy.
@@ -34,7 +32,7 @@
 - **Primary text — Sea-black ink:** `#191C1A` — black with a green cast ("deep water", "in the black"). Replaces navy `#0b2239`.
 - **Secondary text — Graphite:** `#70746B`.
 - **Rules/borders — Hairline:** `#DAD5C6`.
-- **Accent — Ledger red:** `#A63A2B` — **appears exactly once per page** (the wave logomark, or one underline). Replaces gold. The discipline is the brand: we deal in red ink so you stay in the black.
+- **Accent — Ledger red:** `#A63A2B` — **appears at most twice per page**: the wave logomark in the signature block, and one underline (under "Profitable growth"). Nowhere else. Replaces gold. The discipline is the brand: we deal in red ink so you stay in the black.
 - **Optional — Deep water:** `#21332C` — one full-bleed dark footer band, paper text reversed.
 - **Semantic:** not needed on this page; if ever required: success `#3D6B4F`, warning `#9A7B2F`, error `#A63A2B`, info `#4A5D6B` (all desaturated to match).
 - **Dark mode:** optional; invert to `#1B1E1C` paper / `#E9E5DA` ink, red lightened to `#C05A48`, hairlines `#33372F`.
