@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moana Management — Strategic Consulting for Technology Companies</title>
+<meta name="description" content="Moana Management OÜ is a boutique management consultancy helping companies in the IT industry grow and prosper. Senior-level strategic counsel, delivered directly.">
+<meta property="og:title" content="Moana Management">
+<meta property="og:description" content="Boutique strategic consulting for technology companies.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://moana.management/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b2239'/%3E%3Cpath d='M4 21c3-5 6-5 8 0s5 5 8 0 5-5 8 0' stroke='%23d8b26e' stroke-width='2.2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --ink: #0b2239;
+    --ink-soft: #33475c;
+    --paper: #f7f5f0;
+    --paper-deep: #efece4;
+    --gold: #b98a3e;
+    --gold-soft: #d8b26e;
+    --line: #ddd6c8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .sans {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+  /* Header */
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(247, 245, 240, 0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 0;
+  }
+  .brand {
+    display: flex; align-items: center; gap: 12px;
+    text-decoration: none; color: var(--ink);
+  }
+  .brand svg { display: block; }
+  .brand-name {
+    font-size: 15px; letter-spacing: 0.22em; text-transform: uppercase;
+    font-weight: 600;
+  }
+  .nav-links { display: flex; gap: 28px; }
+  .nav-links a {
+    color: var(--ink-soft); text-decoration: none; font-size: 13px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  @media (max-width: 640px) { .nav-links { display: none; } }
+
+  /* Hero */
+  .hero { padding: 110px 0 90px; }
+  .kicker {
+    font-size: 12px; letter-spacing: 0.28em; text-transform: uppercase;
+    color: var(--gold); font-weight: 600; margin-bottom: 26px;
+  }
+  h1 {
+    font-size: clamp(2.2rem, 5.4vw, 3.9rem);
+    line-height: 1.12; font-weight: 500; max-width: 17ch;
+    letter-spacing: -0.01em;
+  }
+  .hero p {
+    margin-top: 30px; max-width: 54ch; font-size: 1.16rem; color: var(--ink-soft);
+  }
+  .hero-cta { margin-top: 42px; }
+  .btn {
+    display: inline-block; text-decoration: none;
+    background: var(--ink); color: var(--paper);
+    padding: 14px 34px; font-size: 13px; letter-spacing: 0.16em;
+    text-transform: uppercase; border: 1px solid var(--ink);
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn:hover { background: transparent; color: var(--ink); }
+
+  .wave-divider { color: var(--gold-soft); opacity: 0.7; }
+
+  /* Sections */
+  section { padding: 88px 0; }
+  .section-alt { background: var(--paper-deep); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  h2 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 500;
+    margin-bottom: 18px; letter-spacing: -0.01em;
+  }
+  .lede { max-width: 62ch; color: var(--ink-soft); font-size: 1.08rem; }
+
+  .pillars {
+    margin-top: 54px; display: grid; gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 760px) { .pillars { grid-template-columns: 1fr; } }
+  .pillar { border-top: 2px solid var(--gold); padding-top: 22px; }
+  .pillar h3 { font-size: 1.15rem; font-weight: 600; margin-bottom: 10px; }
+  .pillar p { color: var(--ink-soft); font-size: 0.98rem; }
+
+  /* Approach */
+  .approach-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;
+  }
+  @media (max-width: 760px) { .approach-grid { grid-template-columns: 1fr; } }
+  .approach-list { list-style: none; margin-top: 8px; }
+  .approach-list li {
+    padding: 18px 0; border-bottom: 1px solid var(--line);
+    color: var(--ink-soft);
+  }
+  .approach-list li strong { color: var(--ink); font-weight: 600; }
+  .approach-list li:last-child { border-bottom: none; }
+
+  /* Contact */
+  .contact { text-align: center; }
+  .contact .lede { margin: 0 auto; }
+  .contact .btn { margin-top: 36px; }
+
+  /* Footer */
+  footer {
+    background: var(--ink); color: #b9c4d0;
+    padding: 56px 0 40px; font-size: 0.85rem;
+  }
+  .footer-grid {
+    display: flex; justify-content: space-between; gap: 40px; flex-wrap: wrap;
+  }
+  footer .brand-name { color: var(--paper); margin-bottom: 14px; }
+  footer p { line-height: 1.8; }
+  footer a { color: var(--gold-soft); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  .footnote {
+    margin-top: 40px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,0.12);
+    color: #7e8ea0; font-size: 0.78rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Moana Management home">
+      <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="6" fill="#0b2239"/>
+        <path d="M4 21c3-5 6-5 8 0s5 5 8 0 5-5 8 0" stroke="#d8b26e" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-name sans">Moana Management</span>
+    </a>
+    <nav class="nav-links sans">
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="kicker sans">Boutique Strategic Consulting</div>
+      <h1>Helping technology companies grow and prosper.</h1>
+      <p>Moana Management is a boutique management consultancy serving companies in the IT industry. We provide senior-level strategic counsel to founders, executives, and boards — clear thinking, honest advice, and decades of operating experience, delivered directly.</p>
+      <div class="hero-cta">
+        <a class="btn sans" href="#contact">Start a conversation</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section-alt">
+    <div class="wrap">
+      <h2>What we do</h2>
+      <p class="lede">We work with a small number of clients on the questions that matter most: where to play, how to win, and how to build an organisation capable of both.</p>
+      <div class="pillars">
+        <div class="pillar">
+          <h3>Corporate &amp; Growth Strategy</h3>
+          <p>Sharpening direction for software and technology-services companies — market positioning, portfolio choices, internationalisation, and sustainable paths to scale.</p>
+        </div>
+        <div class="pillar">
+          <h3>Executive &amp; Board Advisory</h3>
+          <p>A trusted sparring partner for CEOs, leadership teams, and boards. Independent perspective on the decisions that are difficult to discuss anywhere else.</p>
+        </div>
+        <div class="pillar">
+          <h3>Transformation &amp; Value Creation</h3>
+          <p>Guidance through inflection points — new business models, operational turnarounds, M&amp;A readiness, and post-acquisition value creation in the IT sector.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach">
+    <div class="wrap approach-grid">
+      <div>
+        <h2>A deliberately small firm</h2>
+        <p class="lede">Moana Management is not a scaled consultancy — by design. Every engagement is led and delivered personally by the firm's founder, a senior advisor with decades of executive experience building and growing technology companies.</p>
+      </div>
+      <ul class="approach-list">
+        <li><strong>Senior counsel only.</strong> You work directly with the principal — no leverage model, no junior teams, no hand-offs.</li>
+        <li><strong>Few engagements at a time.</strong> We take on a limited number of clients so each one gets genuine attention.</li>
+        <li><strong>Operator's perspective.</strong> Advice grounded in real experience leading technology businesses, not just analysing them.</li>
+        <li><strong>Candour over comfort.</strong> Clients hire us for the truth, plainly stated, and recommendations we would act on ourselves.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section-alt contact">
+    <div class="wrap">
+      <h2>Let's talk</h2>
+      <p class="lede">Engagements begin with a conversation. If your company is at a point where an experienced, independent strategic perspective would help, get in touch.</p>
+      <a class="btn sans" href="mailto:vesa@moana.management">vesa@moana.management</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid sans">
+      <div>
+        <div class="brand-name">Moana Management</div>
+        <p>Strategic consulting for the IT industry.</p>
+      </div>
+      <div>
+        <p>
+          Moana Management OÜ<br>
+          Maakri tn 23a, 10145 Tallinn, Estonia<br>
+          <a href="mailto:vesa@moana.management">vesa@moana.management</a>
+        </p>
+      </div>
+      <div>
+        <p>
+          Registry code: 16681278<br>
+          VAT: EE102591132
+        </p>
+      </div>
+    </div>
+    <div class="footnote sans">
+      © 2026 Moana Management OÜ. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
