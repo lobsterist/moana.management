@@ -46,32 +46,26 @@
     margin: 0 auto;
     padding: 72px 28px 0;
   }
-  .doc-meta {
+  .brand {
     display: flex;
-    justify-content: space-between;
-    gap: 16px;
-    color: var(--graphite);
-    margin-bottom: 72px;
+    align-items: center;
+    gap: 14px;
+    color: var(--ink);
+    margin-bottom: 88px;
   }
-  h1.firm {
-    font-size: clamp(3rem, 9vw, 5rem);
+  h1.headline {
+    font-size: clamp(2.1rem, 6vw, 3.4rem);
     font-weight: 500;
-    line-height: 1.02;
-    letter-spacing: -0.02em;
-    margin-bottom: 56px;
-  }
-  .headline {
-    font-size: clamp(1.3rem, 3vw, 1.55rem);
-    font-weight: 400;
-    line-height: 1.4;
-    max-width: 32ch;
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    max-width: 22ch;
     margin-bottom: 44px;
   }
   .headline .redline {
     text-decoration: underline;
     text-decoration-color: var(--red);
-    text-decoration-thickness: 2px;
-    text-underline-offset: 6px;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
   }
   p.body {
     font-size: 1.1rem;
@@ -121,7 +115,6 @@
     position: relative;
     overflow: hidden;
   }
-  .wavemark { display: block; margin-bottom: 16px; }
   .sig-name {
     font-size: 2rem;
     font-weight: 500;
@@ -161,8 +154,8 @@
     opacity: 0.35;
   }
   @media (max-width: 560px) {
-    .doc { padding-top: 52px; }
-    .doc-meta { flex-direction: column; gap: 6px; margin-bottom: 52px; }
+    .doc { padding-top: 44px; }
+    .brand { margin-bottom: 60px; }
     .chart-etch { width: 240px; right: -60px; }
   }
 </style>
@@ -170,14 +163,14 @@
 <body>
 
 <main class="doc">
-  <div class="doc-meta mono" aria-hidden="true">
-    <span>Ref MM-2026-07 · Tallinn</span>
-    <span>Est. 2023</span>
+  <div class="brand">
+    <svg width="40" height="18" viewBox="0 0 46 20" aria-hidden="true">
+      <path d="M2 12c4-7 8-7 11 0s7 7 11 0 7-7 11 0 5 5 7 3" stroke="#A63A2B" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    </svg>
+    <span class="mono">Moana Management</span>
   </div>
 
-  <h1 class="firm">Moana<br>Management</h1>
-
-  <p class="headline"><span class="redline">Profitable growth</span> for professional services companies in IT, and SaaS.</p>
+  <h1 class="headline"><span class="redline">Profitable growth</span> for professional services companies in IT, and SaaS.</h1>
 
   <p class="body">Moana Management is a boutique strategic consultancy. I advise the founders, executive teams, and boards of consultancies, agencies, software services firms, and SaaS businesses — on strategy, on the commercial model, and on the decisions that are difficult to discuss anywhere else.</p>
 
@@ -209,9 +202,6 @@
 </main>
 
 <footer class="doc-footer">
-  <svg class="wavemark" width="46" height="20" viewBox="0 0 46 20" aria-hidden="true">
-    <path d="M2 12c4-7 8-7 11 0s7 7 11 0 7-7 11 0 5 5 7 3" stroke="#A63A2B" stroke-width="2.4" fill="none" stroke-linecap="round"/>
-  </svg>
   <div class="sig-name">Vesa Palmu</div>
   <div class="sig-title">Founder &amp; Principal</div>
   <div class="sig-links mono"><a href="https://www.linkedin.com/in/vesapalmu/">LinkedIn</a></div>

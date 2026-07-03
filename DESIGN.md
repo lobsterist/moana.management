@@ -45,7 +45,7 @@
 ## Layout
 - **Approach:** creative-editorial, single-column document.
 - **Grid:** one column; max text measure ~58–62ch; document block max-width 720px.
-- **Structure:** mono metadata line → firm name set huge → headline (red underline on the key phrase) → body that begins like a letter → hairline rule → numbered service entries (I. II. III.) → correspondence line (typeset mailto, no button) → signature block footer (name set large + title + legal line + red wave mark + chart etching).
+- **Structure:** small brand line (red wave mark + firm name in mono) → headline set huge as the hero (red underline on "Profitable growth") → body that begins like a letter → hairline rule → numbered service entries (I. II. III.) → correspondence line (typeset mailto, no button) → signature block footer (name set large + title + LinkedIn + legal line + chart etching).
 - **No navigation, no buttons, no cards.** Contact is a typeset line.
 - **Border radius:** 0 everywhere — documents don't have rounded corners.
 
