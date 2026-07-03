@@ -78,6 +78,14 @@
     max-width: 58ch;
     margin-bottom: 26px;
   }
+  p.body a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-color: var(--hairline);
+    text-underline-offset: 4px;
+    transition: text-decoration-color 0.2s;
+  }
+  p.body a:hover { text-decoration-color: var(--red); }
   hr {
     border: 0;
     border-top: 1px solid var(--hairline);
@@ -123,8 +131,19 @@
   .sig-title {
     color: var(--graphite);
     font-size: 1.05rem;
+    margin-bottom: 14px;
+  }
+  .sig-links {
     margin-bottom: 30px;
   }
+  .sig-links a {
+    color: var(--graphite);
+    text-decoration: none;
+    border-bottom: 1px solid var(--hairline);
+    padding-bottom: 2px;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .sig-links a:hover { color: var(--ink); border-color: var(--red); }
   .legal {
     color: var(--graphite);
     line-height: 2.1;
@@ -164,6 +183,8 @@
 
   <p class="body">The firm is deliberately small. Every engagement is led and delivered personally, grounded in decades of executive experience building, leading, and growing these businesses. Few clients at a time. Candour over comfort.</p>
 
+  <p class="body">Alongside client work, I am the co-author of the <a href="https://method.mearra.com">Mearra Method</a> and a PhD researcher on how to run software projects better than agile allows.</p>
+
   <hr>
 
   <section class="svc">
@@ -193,6 +214,7 @@
   </svg>
   <div class="sig-name">Vesa Palmu</div>
   <div class="sig-title">Founder &amp; Principal</div>
+  <div class="sig-links mono"><a href="https://www.linkedin.com/in/vesapalmu/">LinkedIn</a></div>
   <p class="legal mono">
     Moana Management OÜ · Maakri tn 23a, 10145 Tallinn, Estonia<br>
     Reg. 16681278 · VAT EE102591132 · 59.4370°N 24.7536°E<br>
